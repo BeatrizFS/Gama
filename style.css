@@ -1,0 +1,161 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
+}
+
+
+:root {
+    --main: #d68720;
+}
+
+
+header {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0 150px;
+    align-items: center;
+
+    background: var(--main);
+    height: 130px;
+    width: 100%;
+    font-size: 20px;
+
+}
+
+h1 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1 a:hover{
+    text-decoration: none;
+}
+
+.container {
+    height: 90%;
+    display: flex;
+    margin: 3.8rem auto;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+
+.main-text,form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.title {
+    color: var(--main);
+    font-size: 32px;
+
+}
+
+.title-decoration {
+    width: 70px;
+    height: 6px;
+    background-color: var(--text);
+    margin: 15px 0 1em 0;
+}
+
+.formulario h3 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--main);
+}
+
+form {
+    margin: 4rem auto;
+    font-size: 18px;
+    color: #171717;
+    width: 65%;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0 20px 0;
+    
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 20px;
+    flex-wrap: wrap;
+
+}
+
+.cep input {
+    width: 220px;
+}
+
+.estado,
+.numero input {
+    width: 150px;
+}
+
+.rua input {
+    width: 500px;
+}
+
+form h3 {
+    color: var(--main);
+    font-weight: 500;
+    margin: 20px;
+}
+
+.carro {
+    flex-direction: row;
+    width: 200px;
+    
+}
+
+.carro label,
+.habilitacao label {
+    font-weight: 400;
+    padding-right: 20px;
+}
+
+.habilitacao {
+    height: 80px;
+    margin-right: 40px
+}
+
+.habilitacao input {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: var(--main);
+    border: none;
+    width: 400px;
+    height: 50px;
+    color: white;
+    font-weight: 400;
+    border-radius: 8px;
+    font-size: 18px;
+    margin: 1.5rem auto;
+    cursor: pointer;
+}
+
+
+/*Botão*/
+.button {
+        width: 100%;
+    }

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link type="text/css" href="style.css" rel="stylesheet"> 
+</head>
+
+<body>
+    <header>
+        <div class="titulo">
+            <h1><a href="/">JobsNET</a></h1>
+        </div>
+    </header>
+    <br>
+    <main>
+        <section class="formulario">
+            <h3>Formulário de cadastro</h3>
+            <form>
+                <h3>Dados pessoais</h3>
+                <div class="box">
+                    <fieldset>
+                        <label for="name">Nome Completo:</label>
+                        <input type="text" for="name" id="name" name="nome" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="cargo">Cargo Pretendido:</label>
+                        <input type="text" for="cargo" id="cargo" name="cargo" required>
+                    </fieldset>
+                </div>
+
+                <div class="box">
+                    <fieldset>
+                        <label for="data_nascimento"> Data de Nascimento:</label>
+                        <input type="date" for="data_nascimento" id="data_nascimento" name="dataNascimento" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="estado-civil"> Estado Civil:</label>
+                        <select name="estadoCivil">
+                            <option value="solteiro">Solteiro(a)</option>
+                            <option value="casado">Casado(a)</option>
+                            <option value="separado">Separado(a)</option>
+                            <option value="divorciado">Divorciado(a)</option>
+                            <option value="viuvo">Viúvo(a)</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="name"> Sexo:</label>
+                        <select name="sexo">
+                            <option label="" disabled selected value>Escolha uma opção:</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </fieldset>
+
+                </div>
+
+                <div class="box">
+
+                    <fieldset class="cep">
+                        <label for="cep"> CEP:
+                        </label>
+                        <input name="cep" type="text" id="cep" size="10" maxlength="10" placeholder="Ex: 00000-000">
+                    </fieldset>
+
+                    <fieldset class="rua">
+                        <label for="rua"> Endereço:</label>
+                        <input type="address" for="rua" id="rua" name="rua" required>
+                    </fieldset>
+
+                    <fieldset class="numero">
+                        <label for="numero">Número</label>
+                        <input type="text" for="numero" id="numero" name="numero" required>
+                    </fieldset>
+                </div>
+
+                <div class="box">
+                    <fieldset>
+                        <label for="bairro"> Bairro:</label>
+                        <input type="address" for="bairro" id="bairro" name="bairro" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="cidade"> Cidade:
+                        </label>
+                        <input type="address" for="cidade" id="cidade" name="cidade" required>
+                    </fieldset>
+
+                    <fieldset class="estado">
+                        <label for="uf" >Estado:
+                        </label>
+                        <input type="address" for="uf" id="uf" name="estado" required>
+                    </fieldset>
+
+                </div>
+
+                <div class="box">
+                    <fieldset class="email">
+                        <label for="email"> Email:
+                        </label>
+                        <input type="email" for="email" id="email" name="email" placeholder="Ex: exemplo@exemplo.com" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="celular"> Celular:
+                        </label>
+                        <input type="phone" for="celular" id="celular" name="celular" maxlength="15" placeholder="Ex: (00) 00000-0000" required>
+                    </fieldset>
+
+                </div>
+
+
+                <div class="box">
+
+                    <fieldset>
+                        <label for="telefone-1"> Telefone Fixo 1:
+                        </label>
+                        <input type="phone" for="telefone-1" id="telefone-1" name="telefone-1" maxlength="15" placeholder="Ex: (00) 0000-0000">
+
+                    </fieldset>
+                    <fieldset>
+                        <label for="telefone-2"> Telefone Fixo 2:
+                        </label>
+                        <input type="phone" for="telefone-2" id="telefone-2" name="telefone-2" maxlength="15" placeholder="Ex: (00) 0000-0000">
+                    </fieldset>
+                    
+                </div>
+
+                <br><br>
+                <hr width = 100% align = right noshade color="black">
+                <br>
+
+                <h3>Documentos</h3>
+                <div class="box">
+                    <fieldset>
+                        <label for="id"> Identidade:
+                        </label>
+                        <input type="number" for="id" id="id" name="identidade">
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="cpf"> CPF:
+                        </label>
+                        <input type="text" for="cpf" id="cpf" name="cpf" maxlength="14" placeholder="Ex: 000.000.000-00" ;>
+                    </fieldset>
+                </div>
+
+                <div class="box">
+                    <fieldset>
+                        <p>Habilitação</p>
+                        </label>
+                        <div class="habilitacao">
+                            <input type="checkbox" id="A" name="habilitacao">
+                            <label for="A">Categoria A</label>
+                            
+                            <input type="checkbox" id="B" name="habilitacao">
+                            <label for="B">Categoria B</label>
+                            <br>
+                            <input type="checkbox" id="C" name="habilitacao">
+                            <label for="C">Categoria C</label>
+                            
+                            <input type="checkbox" id="D" name="habilitacao">
+                            <label for="D">Categoria D</label>
+                            <br>
+                            <input type="checkbox" id="E" name="habilitacao">
+                            <label for="E">Categoria E</label>
+                            
+                            <input type="checkbox" id="sem_habilitado" name="habilitacao">
+                            <label for="sem_habilitado">Não possui</label>
+                        </div>
+                    </fieldset>
+                        <br>
+                    <fieldset>
+                        <p>Possui carro?</p>
+                        <div class="carro">
+                            <input type="radio" id="tem_carro" name="carro" value="Sim">
+                            <label for="tem_carro">Sim</label>
+                            <br>
+                            <input type="radio" id="nao_tem_carro" name="carro" value="Não">
+                            <label for="nao_tem_carro">Não</label>
+                        </div>
+                    </fieldset>
+
+                        <br>
+                </div>
+                <button type="submit" id="submit-btn"><i style="margin-right: 10px;"></i>Enviar</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+
+</html>
